@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostafa | Data Analyst Portfolio</title>
+    
+    <!-- Font-Awesome CSS -->
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css" />
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper.css" />
+    
+    <!-- Magnific-Popup CSS -->
+    <link rel="stylesheet" href="assets/vendors/magnific-popup/magnific-popup.css" />
+    
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    
+    <style>
+        /* Project Modal Styles */
+        .project-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+            padding-top: 60px;
+        }
+        
+        .modal-content {
+            background: #fff;
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 900px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+            position: relative;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+        }
+        
+        .project-header {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #0078d7;
+            padding-bottom: 15px;
+        }
+        
+        .project-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .project-description {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .project-technologies {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .tech-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .tech-list li {
+            background: #f5f5f5;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .tech-list i {
+            margin-right: 10px;
+            color: #0078d7;
+        }
+        
+        .project-screenshots {
+            width: 100%;
+            margin-top: 30px;
+        }
+        
+        .screenshot {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .screenshot img {
+            width: 100%;
+            display: block;
+        }
+        
+        .project-links {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .project-links a {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            background: #0078d7;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .project-links a:hover {
+            background: #005fa3;
+        }
+        
+        .project-links i {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-------------------- Scroll-Top Area (Start) -------------------->
+    <a href="#home" class="scroll-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <!-------------------- Scroll-Top Area (End) -------------------->
+
+    <!-------------------- Header Area (Start) -------------------->
+    <header class="header">
+        <!-- Logo -->
+        <a class="logo" href="#home">
+            <h2>Mostafa</h2>
+        </a>
+        
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#contact">contact</a>
+        </nav>
+        
+        <!-- Menubar -->
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </header>
+    <!-------------------- Header Area (End) -------------------->
+
+    <!-------------------- Home Area (Start) -------------------->
+    <section class="home" id="home">
+        <div class="box-container">
+            <div class="content">
+                <div class="text">
+                    <h2>hi there!</h2>
+                    <h1>I Am a <span class="typing-text"></span></h1>
+                    <p>I'm Mostafa, a data analyst driven by a passion for transforming data into meaningful insights that empower smarter business decisions. I strive to deliver clear, accurate, and impactful analysis that supports organizational growth.</p>
+                    <a href="#about" class="btn">about me <i class="fas fa-user"></i></a>
+                </div>
+            </div>
+            
+            <div class="image">
+                <img src="assets\images\Portfolio\photo_٢٠٢٥-٠٦-٠٣_٠٤-٣٠-١٩.jpg" alt="Mostafa - Data Analyst">
+            </div>
+        </div>
+    </section>
+    <!-------------------- Home Area (End) -------------------->
+
+    <!-------------------- About Area (Start) -------------------->
+    <section class="about" id="about">
+        <div class="box-container">
+            <div class="image">
+                <img src="assets\images\Portfolio\photo_٢٠٢٥-٠٦-٠٣_٠٤-٣٠-١٩.jpg" alt="About Mostafa">
+            </div>
+            
+            <div class="content">
+                <h2>My name is Mostafa.</h2>
+                <p>I'm Mostafa, a data analyst skilled in building ETL pipelines, designing efficient data models, and creating insightful reports using DAX and Power BI. I turn raw data into clear, actionable insights that help organizations make smarter decisions and grow.</p>
+                
+                <div class="about-info">
+                    <div class="info">
+                        <h4>age: <span>21</span></h4>
+                        <h4>gender: <span>Male</span></h4>
+                        <h4>language: <span>Arabic, English</span></h4>
+                        <h4>work: <span>Data analyst</span></h4>
+                        <h4>freelance: <span>available</span></h4>
+                        <a href="https://drive.google.com/uc?export=download&id=1Hnxp5v3IKVn4AwJIy3xmMkvvJAczB9Tt" class="btn" download>Download CV <i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skill-container">
+            <div class="heading">
+                <h2>my <span>skills</span></h2>
+            </div>
+            
+            <div class="skills-section">
+                <!-- Technical Skills Column -->
+                <div class="skills-column">
+                    <h3><i class="fas fa-laptop-code"></i> Technical Skills</h3>
+                    <ul class="skills-list technical-skills">
+                        <li><i class="fas fa-chart-bar"></i> Power BI (DAX, ETL, Data Modeling)</li>
+                        <li><i class="fab fa-python"></i> Python (Pandas, NumPy, Plotly)</li>
+                        <li><i class="fas fa-database"></i> SQL</li>
+                        <li><i class="fas fa-brain"></i> Machine Learning</li>
+                    </ul>
+                </div>
+                
+                <!-- Soft Skills Column -->
+                <div class="skills-column">
+                    <h3><i class="fas fa-user-tie"></i> Soft Skills</h3>
+                    <ul class="skills-list soft-skills">
+                        <li><i class="fas fa-comments"></i> Effective Communication</li>
+                        <li><i class="fas fa-lightbulb"></i> Problem Solving</li>
+                        <li><i class="fas fa-book"></i> Continuous Learning</li>
+                        <li><i class="fas fa-tasks"></i> Attention to Detail</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------- About Area (End) -------------------->
+
+    <!-------------------- Portfolio Area (Start) -------------------->
+    <section class="portfolio" id="portfolio">
+        <div class="heading">
+            <h2>my <span>portfolio</span></h2>
+        </div>
+        
+        <div class="gallery">
+            <ul class="controls">
+                <li class="button btn active" data-filter="all">all</li>
+                <li class="button btn" data-filter="sales">Sales Analysis</li>
+                <li class="button btn" data-filter="marketing">Marketing Analysis</li>
+                <li class="button btn" data-filter="supply">Supply Chain</li>
+            </ul>
+            
+            <div class="box-container">
+                <!-- Project 1 - Sales Customer Analysis -->
+                <div class="portfolio-item image sales" onclick="openProjectModal('project1')">
+                    <img src="assets/images/Portfolio/sales-customer-analysis.png" alt="Sales-Customer Analysis" />
+                    <div class="content">
+                        <h4>Sales-Customer Analysis</h4>
+                        <p>Power BI Dashboard</p>
+                        <span class="view-btn">View Details <i class="fas fa-search-plus"></i></span>
+                    </div>
+                </div>
+                
+                <!-- Project 2 - Marketing Analysis -->
+                <div class="portfolio-item image marketing" onclick="openProjectModal('project2')">
+                    <img src="assets/images/Portfolio/marketing-analysis.png" alt="Marketing Analysis" />
+                    <div class="content">
+                        <h4>Marketing Campaign Analysis</h4>
+                        <p>Python & Power BI</p>
+                        <span class="view-btn">View Details <i class="fas fa-search-plus"></i></span>
+                    </div>
+                </div>
+                
+                <!-- Project 3 - Supply Chain -->
+                <div class="portfolio-item image supply" onclick="openProjectModal('project3')">
+                    <img src="assets/images/Portfolio/supply-chain.png" alt="Supply Chain Analysis" />
+                    <div class="content">
+                        <h4>Supply Chain Optimization</h4>
+                        <p>SQL & Power BI</p>
+                        <span class="view-btn">View Details <i class="fas fa-search-plus"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------- Portfolio Area (End) -------------------->
+
+    <!-------------------- Project Modals -------------------->
+    <!-- Project 1 Modal -->
+    <div id="project1" class="project-modal">
+    <div class="modal-content" style="max-width: 800px;">
+        <span class="close-modal" onclick="closeProjectModal('project1')">&times;</span>
+        
+        <div class="project-header" style="margin-bottom: 20px;">
+            <h2 style="font-size: 28px; margin-bottom: 5px; color: #2c3e50;">Sales & Customer Analysis Dashboard</h2>
+            <p class="project-category" style="font-size: 18px; color: #7f8c8d;">Power BI | Data Visualization | Business Intelligence</p>
+        </div>
+        
+        <div class="project-details" style="display: flex; gap: 30px; margin-bottom: 25px;">
+            <div class="project-description" style="flex: 1;">
+                <h3 style="font-size: 22px; color: #3498db; border-bottom: 2px solid #3498db; padding-bottom: 5px;">Project Overview</h3>
+                <p style="font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
+                    This comprehensive sales dashboard transforms raw sales data into actionable insights, enabling teams to:
+                </p>
+                <ul style="font-size: 15px; line-height: 1.8; padding-left: 20px;">
+                    <li style="margin-bottom: 8px;">📈 Track customer purchasing patterns and product performance</li>
+                    <li style="margin-bottom: 8px;">🌍 Analyze regional sales trends with interactive maps</li>
+                    <li style="margin-bottom: 8px;">⏱️ Monitor real-time sales metrics and KPIs</li>
+                    <li style="margin-bottom: 8px;">🔍 Identify growth opportunities through advanced segmentation</li>
+                </ul>
+            </div>
+            
+            <div class="project-technologies" style="flex: 1;">
+                <h3 style="font-size: 22px; color: #3498db; border-bottom: 2px solid #3498db; padding-bottom: 5px;">Technical Implementation</h3>
+                <ul class="tech-list" style="font-size: 15px; padding-left: 0;">
+                    <li style="background: #f8f9fa; padding: 12px; border-radius: 5px; margin-bottom: 10px; display: flex; align-items: center;">
+                        <i class="fas fa-chart-bar" style="color: #3498db; margin-right: 10px; font-size: 18px;"></i>
+                        <strong>Power BI:</strong> Interactive dashboards with drill-through capabilities
+                    </li>
+                    <li style="background: #f8f9fa; padding: 12px; border-radius: 5px; margin-bottom: 10px; display: flex; align-items: center;">
+                        <i class="fas fa-code" style="color: #3498db; margin-right: 10px; font-size: 18px;"></i>
+                        <strong>DAX:</strong> 50+ measures for dynamic calculations
+                    </li>
+                    <li style="background: #f8f9fa; padding: 12px; border-radius: 5px; margin-bottom: 10px; display: flex; align-items: center;">
+                        <i class="fab fa-python" style="color: #3498db; margin-right: 10px; font-size: 18px;"></i>
+                        <strong>Python EDA:</strong> Data cleaning and pattern discovery
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="background: #e8f4fc; padding: 20px; border-radius: 8px; margin-bottom: 25px;">
+            <h3 style="font-size: 22px; color: #3498db; margin-top: 0; margin-bottom: 15px;">Business Impact</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+                <div style="flex: 1; min-width: 200px; background: white; padding: 15px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                   
+                    <div style="font-size: 14px;">Identified loss-making periods and locations through sales data analysis</div>
+                </div>
+                <div style="flex: 1; min-width: 200px; background: white; padding: 15px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    
+                    <div style="font-size: 14px;">Provided actionable insights to reduce losses and improve targeting  </div>
+                </div>
+                <div style="flex: 1; min-width: 200px; background: white; padding: 15px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                   
+                    <div style="font-size: 14px;">Enabled data-driven decision-making for regional sales strategies </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-links" style="display: flex; gap: 15px; margin-top: 20px;">
+            <a href="https://app.powerbi.com/links/__KSdJ9VPF?ctid=8fcf4cd9-2fe4-4571-8431-b17c3f29efb3&pbi_source=linkShare&bookmarkGuid=2890c65b-8667-4d64-888f-acfeaab70642" 
+               target="_blank"
+               style="background: #3498db; color: white; padding: 12px 25px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; font-weight: 500;">
+                <i class="fas fa-external-link-alt" style="margin-right: 8px;"></i> Live Dashboard Preview
+            </a>
+            <a href="https://github.com/yourusername/sales-analysis" 
+               target="_blank"
+               style="background: #2c3e50; color: white; padding: 12px 25px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; font-weight: 500;">
+                <i class="fab fa-github" style="margin-right: 8px;"></i> View Source Code
+            </a>
+        </div>
+    </div>
+</div>
+    
+    <!-- Project 2 Modal
+    <div id="project2" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProjectModal('project2')">&times;</span>
+            
+            <div class="project-header">
+                <h2>Marketing Campaign Analysis</h2>
+                <p class="project-category">Python | Machine Learning | Data Analysis</p>
+            </div>
+            
+            <div class="project-details">
+                <div class="project-description">
+                    <h3>Project Overview</h3>
+                    <p>Analysis of marketing campaign effectiveness across multiple channels with predictive modeling to optimize future campaign spending and targeting.</p>
+                    
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Channel attribution modeling</li>
+                        <li>Customer conversion prediction</li>
+                        <li>ROI analysis by campaign</li>
+                        <li>Customer lifetime value estimation</li>
+                    </ul>
+                </div>
+                
+                <div class="project-technologies">
+                    <h3>Technologies Used</h3>
+                    <ul class="tech-list">
+                        <li><i class="fab fa-python"></i> Python (Pandas, NumPy, Scikit-learn)</li>
+                        <li><i class="fas fa-chart-line"></i> Plotly & Matplotlib</li>
+                        <li><i class="fas fa-database"></i> PostgreSQL</li>
+                        <li><i class="fas fa-robot"></i> Machine Learning Models</li>
+                    </ul>
+                    
+                    <h3>Project Impact</h3>
+                    <ul>
+                        <li>Increased campaign ROI by 22%</li>
+                        <li>Reduced customer acquisition cost by 15%</li>
+                        <li>Improved targeting accuracy</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="project-screenshots">
+                <h3>Screenshots</h3>
+                <div class="screenshot">
+                    <img src="assets/images/Portfolio/marketing-screenshot1.png" alt="Marketing Analysis">
+                </div>
+            </div>
+            
+            <div class="project-links">
+                <a href="#" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    -->
+
+
+
+
+
+
+    <!-- Project 3 Modal 
+    <div id="project3" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProjectModal('project3')">&times;</span>
+            
+            <div class="project-header">
+                <h2>Supply Chain Optimization</h2>
+                <p class="project-category">SQL | Data Modeling | Process Optimization</p>
+            </div>
+            
+            <div class="project-details">
+                <div class="project-description">
+                    <h3>Project Overview</h3>
+                    <p>End-to-end supply chain analysis identifying bottlenecks, optimizing inventory levels, and improving delivery times through data-driven insights.</p>
+                    
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Inventory optimization models</li>
+                        <li>Supplier performance analysis</li>
+                        <li>Delivery route optimization</li>
+                        <li>Demand forecasting</li>
+                    </ul>
+                </div>
+                
+                <div class="project-technologies">
+                    <h3>Technologies Used</h3>
+                    <ul class="tech-list">
+                        <li><i class="fas fa-database"></i> Advanced SQL Queries</li>
+                        <li><i class="fas fa-project-diagram"></i> Data Warehousing</li>
+                        <li><i class="fas fa-chart-bar"></i> Power BI</li>
+                        <li><i class="fas fa-calculator"></i> Statistical Analysis</li>
+                    </ul>
+                    
+                    <h3>Project Impact</h3>
+                    <ul>
+                        <li>Reduced inventory costs by 18%</li>
+                        <li>Improved on-time delivery to 98%</li>
+                        <li>Optimized warehouse space utilization</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="project-screenshots">
+                <h3>Screenshots</h3>
+                <div class="screenshot">
+                    <img src="assets/images/Portfolio/supply-screenshot1.png" alt="Supply Chain Dashboard">
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+    <!-------------------- Contact Area (Start) -------------------->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2><span>contact</span> me</h2>
+        </div>
+        
+        <div class="box-container">
+            <div class="contact-info">
+                <h3>get in touch</h3>
+                <p>Feel free to reach out for collaborations or just to say hello!</p>
+                
+                <div class="info-item">
+                    <h4>email:</h4>
+                    <div class="detail">
+                        <div class="fas fa-envelope"></div>
+                        <p class="gmail">your.email@example.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <h4>linkedin:</h4>
+                    <div class="detail">
+                        <div class="fab fa-linkedin"></div>
+                        <p class="linkedin">linkedin.com/in/yourprofile</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <h4>github:</h4>
+                    <div class="detail">
+                        <div class="fab fa-github"></div>
+                        <p class="github">github.com/yourusername</p>
+                    </div>
+                </div>
+            </div>
+            
+            <form method="post" class="contact-form" id="contactUs-Form">
+                <input type="text" name="name" class="box" id="name" placeholder="name" required />
+                <input type="email" name="email" class="box" id="email" placeholder="email" required />
+                <input type="text" name="subject" class="box" id="subject" placeholder="subject" required />
+                <textarea cols="30" rows="10" name="comment" id="comment" class="box" placeholder="message"></textarea>
+                <button type="submit" class="btn" name="submit" id="submit">send message</button>
+                <span class="alert" id="msg"></span>
+            </form>
+        </div>
+    </section>
+    <!-------------------- Contact Area (End) -------------------->
+
+    <!-------------------- Footer Area (Start) -------------------->
+    <footer>
+        <div class="social">
+            <a href="#" class="fab fa-linkedin-in"></a>
+            <a href="#" class="fab fa-github"></a>
+            <a href="#" class="fab fa-twitter"></a>
+        </div>
+        
+        <div class="content">
+            <p>© <span id="year"></span> Mostafa | Data Analyst Portfolio</p>
+        </div>
+    </footer>
+    <!-------------------- Footer Area (End) -------------------->
+
+    <!-- JQuery -->
+    <script src="assets/vendors/jquery/jquery-3.6.0.js"></script>
+    
+    <!-- SWIPER JS -->
+    <script src="assets/vendors/swiper/swiper.js"></script>
+    
+    <!-- Magnific-Popup JS -->
+    <script src="assets/vendors/magnific-popup/jquery.magnific-popup.js"></script>
+    
+    <!-- Typed JS -->
+    <script src="assets/vendors/typed/typed.js"></script>
+    
+    <!-- Custom Script File -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/scroll-spy.js"></script>
+    <script src="assets/js/counter-up.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+    
+    <script>
+        // Typed Script
+        var typed = new Typed('.typing-text', {
+            strings: ['Data Analyst', 'BI Developer', 'Data Scientist'],
+            typeSpeed: 120,
+            loop: true
+        });
+        
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Project Modal Functions
+        function openProjectModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+        
+        function closeProjectModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
+        }
+        
+        // Close modal when clicking outside content
+        window.onclick = function(event) {
+            if (event.target.className === 'project-modal') {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>
